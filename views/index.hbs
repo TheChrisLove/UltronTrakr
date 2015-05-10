@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Everybody Hates Chris</title>
+
+	<script type="text/javascript" src="js/lib/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/lib/underscore-min.js"></script>
+	<script type="text/javascript" src="js/lib/backbone-min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lib/handlebars.runtime-v3.0.1.js"></script>
+	<script type="text/javascript" src="templates/templates.js"></script>
+	<script type="text/javascript" src="js/models/menuitem.js"></script>
+	<script type="text/javascript" src="js/collections/menuitems.js"></script>
+	<script type="text/javascript" src="js/views/menu.js"></script>
+	<script type="text/javascript" src="js/views/menuitemform.js"></script>
+	<script type="text/javascript" src="js/views/menuitemdetails.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript">
+		app.menuItems.reset({{{data}}});
+	</script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+<body>
+	<div class="container">
+		<h1>For Chris Love fans: Bye Felicia!</h1>
+		 
+		<ul class="nav nav-pills">
+			<li><a href="#">Adios!</a></li>
+			<li><a href="#/menu-items/new">Request My Autograph</a></li>
+			<li><a href="#/menu-items/garden-salad">IDFWU</a></li>
+		</ul>
+	</div>
+	<br />
+	<div class="container">
+        <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-primary">
+                <div class="panel-heading">
+                    <h4 style="margin-left: 25px">Bye Felicia!</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="app"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
